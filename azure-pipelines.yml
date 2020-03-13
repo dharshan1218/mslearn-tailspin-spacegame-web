@@ -55,11 +55,11 @@ steps:
      arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)' 
      zipAfterPublish: true
 
-  - template: tejatemplates/tejabuild1.yml
+  - template: tejatemplates/tejabuild.yml
     parameters:
       buildConfiguration: 'Debug'
    
-  - template: tejatemplates/tejabuild1.yml
+  - template: tejatemplates/tejabuild.yml
     parameters:
       buildConfiguration: 'Release'
 
